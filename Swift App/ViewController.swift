@@ -13,16 +13,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var CoolLabel: UILabel!
     
-    var TapCount = 0
+    @IBOutlet weak var Text1: UITextField!
    
+    
+    @IBOutlet weak var Text2: UITextField!
+    
+    
+    
+    
     @IBAction func ButtonTapped(_ sender: AnyObject){
         
-       TapCount = TapCount + 1
-       
-        if TapCount >= 20 {
-            CoolLabel.text = "Your Dumbass Tapped A Worthless Piece Of Shit Button, Congratulations"
+        
+        print(Text1.text!)
+        print(Text2.text!)
+      
         }
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
